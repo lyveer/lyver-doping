@@ -66,7 +66,7 @@
 
 # &nbsp;   ```lua
 
-# &nbsp;   doping = { name = 'doping', label = 'Doping Syringe', weight = 20, type = 'item', image = 'syringe.png', unique = false, useable = true, shouldClose = true, description = 'Restores stamina immediately.' },
+# &nbsp;   doping = { name = 'doping', label = 'Doping Syringe', weight = 20, type = 'item', image = 'doping.png', unique = false, useable = true, shouldClose = true, description = 'Restores stamina immediately.' },
 
 # &nbsp;   ```
 
