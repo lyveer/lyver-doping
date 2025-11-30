@@ -13,7 +13,13 @@ client_script {
 }
 server_script 'server.lua'
 
+
+
 dependencies {
     'rsg-core',
     'rsg-inventory'
+}
+
+escrow_ignore {
+    '*.lua'
 }
