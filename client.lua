@@ -1,5 +1,5 @@
 local RSGCore = exports['rsg-core']:GetCoreObject()
-local isBusy = false 
+local isBusy = false
 
 -- [[ 2. ANIMATION FUNCTION ]] --
 local function PlayAnimSyringe(propName)
@@ -41,14 +41,14 @@ local function ApplyDrunkEffect(duration)
 
         if GetGameTimer() >= endTime then break end
 
-        DoScreenFadeOut(1000) 
-        Wait(1000)           
+        DoScreenFadeOut(1000)
+        Wait(1000)
 
         SetPedToRagdoll(ped, 4000, 4000, 0, true, true, false)
 
         Wait(3000)
 
-        DoScreenFadeIn(1500) 
+        DoScreenFadeIn(1500)
 
 
         Wait(1000)
@@ -87,11 +87,9 @@ RegisterNetEvent('rsg-staminatonic:client:UseSyringe', function(usageCount)
             AnimpostfxStop(Config.ScreenEffectName)
         end
     elseif usageCount == 2 then
-
         TriggerEvent('rNotify:NotifyLeft', "WARNING", "You used too much! You will collapse if you take another.",
             "menu_textures", "cross", 5000)
     elseif usageCount >= 3 then
-
         TriggerEvent('rNotify:NotifyLeft', "DANGER", "Heart Failure! System Collapse!", "menu_textures", "cross", 5000)
 
         isBusy = true
